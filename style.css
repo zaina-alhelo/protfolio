@@ -218,8 +218,69 @@ align-items: center;
 .card:hover {
     transform: scale(1.2);
     }
-    
  
+  /*  .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto ;
+        grid-template-areas: 
+            'python  cplus cplus'
+            'html skill css'
+            ' csharp csharp sql';
+            height: 100vh;
+        
+    }
+    .python {
+        grid-area: python;
+        
+         
+    }
+    
+    .cplus {
+        grid-area: cplus;
+        padding-left: 100px;
+   
+    }
+    .cplus img {
+        margin-left: 404px;
+        margin-top: 70px;
+        width: 150px;
+    }
+    
+   .sql {
+        grid-area: sql;
+    }
+    
+    .skill {
+        grid-area: skill;
+        margin-left:200px ;
+        border-radius: 70%;
+     
+    }
+    
+    .html {
+        grid-area: html;
+    }
+    .html img {
+        width: 150px;
+    margin-left: 158px;
+    margin-top: 160px;
+    }
+    .csharp {
+        grid-area: csharp;
+    }
+    .csharp {
+        margin-left: 400px;
+        /* margin-bottom: 100px; 
+    }
+    .css {
+        grid-area: css;
+        margin-bottom: 200px;
+    }
+    .css img {
+        margin-top: 200px;
+        margin-right: 200px;
+    }*/
 
    
 #SKILLS {
@@ -232,19 +293,24 @@ align-items: center;
     /* padding-top: 300px; */
 }
 #skills{
-    padding:300px 200px;
+    padding:300px 100px;
     display: flex;
-    
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    font-size:5em;
+    color: rgb(107, 230, 189);
    
 }
 .photo {
     display: flex;
     margin-right: 200px;
+    
 
 }
 #python {
     align-self: center;
     transition: 0.5s;
+    border-radius: 50%;
 }
 #python:hover {
     transform: scale(1.2);
@@ -296,7 +362,7 @@ align-items: center;
     /* height: 600px; */
     align-items: center;
    
-}
+} 
 
 #COURSES{
     background:url(image/courses\ back.jpg) no-repeat;
