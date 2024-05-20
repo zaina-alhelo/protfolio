@@ -12,7 +12,6 @@
     background: url(image/msg5385104349-3066.jpg) no-repeat ;
     min-width: 100vh;
     background-size:cover;
-    /* background-attachment: fixed; */
 }
 header {
  display: flex;
@@ -136,7 +135,6 @@ nav a {
 #ABOUT img {
     width: 700px;
     padding: 300px 200px;
-    /* margin-left: 200px; */
 }
 
 #a {
@@ -213,17 +211,6 @@ align-items: center;
     transform: scale(1.2);
     }
  
-  /*  .grid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto ;
-        grid-template-areas: 
-            'python  cplus cplus'
-            'html skill css'
-            ' csharp csharp sql';
-            height: 100vh;
-        
-    }
     .python {
         grid-area: python;
         
@@ -265,16 +252,8 @@ align-items: center;
     }
     .csharp {
         margin-left: 400px;
-        /* margin-bottom: 100px; 
+        
     }
-    .css {
-        grid-area: css;
-        margin-bottom: 200px;
-    }
-    .css img {
-        margin-top: 200px;
-        margin-right: 200px;
-    }*/
 
    
 #SKILLS {
@@ -284,7 +263,7 @@ align-items: center;
     align-items: center;
     justify-content: center; 
     
-    /* padding-top: 300px; */
+   
 }
 #skills {
     padding: 300px 100px;
@@ -321,7 +300,20 @@ align-items: center;
 
 }
 #python {
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.5s;
+    border-radius: 50%;
+    margin-left: 40px;
+}
+#figma {
+    margin-left: 60px;
+    margin-top: 35px;
+    transition: 0.5s;
+}
+#git {
+    margin-right: 30px;
     transition: 0.5s;
     border-radius: 50%;
 }
@@ -329,17 +321,23 @@ align-items: center;
     transform: scale(1.2);
     }
 #c {
-   
+    margin-top: 35px;
     transition: 0.5s; 
 }
 #c:hover {
     transform: scale(1.2);
     }
 #css {
-  
+    margin-top: 20px;
     transition: 0.5s; 
 }
 #css:hover {
+    transform: scale(1.2);
+    }
+#figma:hover {
+    transform: scale(1.2);
+    }
+#git:hover {
     transform: scale(1.2);
     }
 #cp {
@@ -382,7 +380,6 @@ align-items: center;
     background-size: cover;
     display: flex;
     align-items: center;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     padding:200px 50px;
 }
@@ -390,7 +387,6 @@ align-items: center;
 padding-left: 25px;   
 } 
 #course {
-    /* padding:150px 200px; */
     display: flex;
     width: 900px;
     align-items: center;
@@ -491,12 +487,12 @@ padding-left: 25px;
 }
 
 #CONTACT h4 {
-    position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 2em;
     animation: move 2s infinite;
+    margin-left: 150px;
 }
 
 @keyframes move {
@@ -520,10 +516,11 @@ padding-left: 25px;
 
 #CONTACT .contact img {
     width: 100px;
-    margin: 0 20px;
     transition: transform 0.5s;
 }
-
+#CONTACT  img {
+    margin-right: 100px;
+}
 #CONTACT .contact a:hover img {
     transform: scale(1.2);
 }
@@ -639,9 +636,9 @@ padding-left: 25px;
         background-color: rgb(166, 238, 214);
         display: flex;
         flex-direction: column;
-        
-        margin-top: 50px;
+          margin-top: 50px;
         margin-bottom: 100px;
+        width: 100%;
     }
     .card {
 
@@ -675,6 +672,7 @@ padding-left: 25px;
     #COURSES {
         background-image: none;
         background-color: rgb(166, 238, 214);
+        background-size: cover;
         flex-direction: column;
     }
     #COURSES img {
