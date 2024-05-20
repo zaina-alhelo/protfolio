@@ -663,6 +663,7 @@ padding-left: 25px;
         display: flex;
         flex-direction: column;
         width: 100vh ;
+       
      
     }
     .boxes {
@@ -670,6 +671,7 @@ padding-left: 25px;
         margin-top: 0;
         align-items: center;
         justify-content: center;
+        margin-right: 100px;
       
     }
   
@@ -695,6 +697,18 @@ padding-left: 25px;
         justify-content: center;
         padding: 0;
         width: 100vh ;
+    }
+    #skills {
+        margin-right: 150px;
+    }
+    #git   {
+        margin-left: 30px;
+    }
+    #python   {
+        margin-left: 100px;
+    }
+    #figma {
+        margin-left: 100px;
     }
     .photo {
         padding: 0;
