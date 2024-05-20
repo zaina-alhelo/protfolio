@@ -653,6 +653,7 @@ padding-left: 25px;
         background-color: rgb(166, 238, 214);
         display: flex;
         flex-direction: column;
+        width: 100vh ;
      
     }
     .boxes {
@@ -684,6 +685,7 @@ padding-left: 25px;
         align-content: center;
         justify-content: center;
         padding: 0;
+        width: 100vh ;
     }
     .photo {
         padding: 0;
@@ -692,22 +694,30 @@ padding-left: 25px;
         flex-direction: column;
     }
     #COURSES {
+        width: 100vh ;
         background-image: none;
         background-color: rgb(166, 238, 214);
         background-size: cover;
         flex-direction: column;
     }
     #COURSES img {
-        margin-left: 190px;
+        /* margin-left: 190px; */
     }
     .container {
         flex-direction: column;
     }
     .images {
         flex-direction: column;
-        height: 45vh;
+        height: 100vh;
     }
     .item {
         height: 100%;
+    }
+    .item:hover {
+        flex: 40;
+       
+      }
+      #CONTACT  img {
+        margin-right: 10px;
     }
 }
