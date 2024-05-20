@@ -597,6 +597,10 @@ padding-left: 25px;
     .navbarr  {
         display: flex;
         display: block;
+      
+    }
+    nav {
+        width: 50px;
     }
     .big {
         display: none;
@@ -623,14 +627,17 @@ padding-left: 25px;
     
      .logo img{
         display: flex;
-        width: 70px;
+        padding-top: 10px;
+        width: 100px;
         
     }
    
-   
+   header {
+    
+   }
   
     
-  /*  #ABOUT {
+   #ABOUT {
         background-image: none;
         background-color: rgb(166, 238, 214);
         display: flex;
@@ -650,7 +657,7 @@ padding-left: 25px;
         
         margin: 80px; 
     }
-    #EDUCATION {
+   #EDUCATION {
         background-image: none;
         background-color: rgb(166, 238, 214);
         display: flex;
@@ -704,7 +711,7 @@ padding-left: 25px;
     }
     #COURSES img {
         margin-left: 190px;
-    }*/
+    }
     .container {
         flex-direction: column;
     }
