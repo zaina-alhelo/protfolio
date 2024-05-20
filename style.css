@@ -576,7 +576,7 @@ padding-left: 25px;
   }
   #PROJECTES {
 
-  margin: 300px 0;
+  margin: 100px 0;
 
   }
 
@@ -602,7 +602,7 @@ padding-left: 25px;
         }
     .b {
         background-image: none;
-        background-color: rgb(166, 238, 214);
+        background-color: rgb(166, 238, 214)
         
     }
     header {
@@ -701,7 +701,7 @@ padding-left: 25px;
         flex-direction: column;
     }
     #COURSES img {
-        /* margin-left: 190px; */
+        margin-left: 190px;
     }
     .container {
         flex-direction: column;
@@ -717,7 +717,14 @@ padding-left: 25px;
         flex: 40;
        
       }
+
       #CONTACT  img {
         margin-right: 10px;
     }
+    
+#CONTACT .contact {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 }
