@@ -468,7 +468,7 @@ padding-left: 25px;
 
   }
 
-@media (min-width: 375px) {
+@media (min-width: 1000px) {
     body {
         background-color: lavenderblush; 
     }
@@ -545,7 +545,7 @@ padding-left: 25px;
   }
 }
 
- @media only screen and (max-width: 375px) {
+ @media only screen and (max-width: 500px) {
    #nav-bar {
         display: block;
     }
