@@ -30,11 +30,12 @@
     <div class="b">
       <!-- navbar -->
       <header>
-        <div class="logo">
-          <a href="#"><img src="image/logo.png" alt="logo" /></a>
-        </div>
+ 
 
         <nav class="big">
+                 <div class="logo">
+          <a href="#"><img src="image/logo.png" alt="logo" /></a>
+        </div>
           <ul class="menu">
             <li><a href="#HOME">HOME</a></li>
             <li><a href="#ABOUT">ABOUT</a></li>
@@ -46,65 +47,49 @@
           </ul>
         </nav>
 
-        <nav class="small navbar bg-body-tertiary fixed-top">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-end"
-              tabindex="-1"
-              id="offcanvasNavbar"
-              aria-labelledby="offcanvasNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                  zaina portfolio
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#HOME"
-                      >HOME</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#ABOUT">ABOUT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#EDUCATION">EDUCATION</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#SKILLS">SKILLS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#COURSES">COURSES</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#CONTACT">CONTACT</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
+ <nav class="navbar bg-body-tertiary fixed-top" id="nav-bar">
+  <div class="container-fluid">
+    <a href="#"><img src="image/logo.png" alt="logo" width="100px"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">zaina portfolio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home" data-bs-dismiss="offcanvas">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ABOUT" data-bs-dismiss="offcanvas">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#EDUCATION" data-bs-dismiss="offcanvas">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#SKILLS" data-bs-dismiss="offcanvas">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#COURSES" data-bs-dismiss="offcanvas">COURSES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#PROJECTES" data-bs-dismiss="offcanvas">PROJECTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#CONTACT" data-bs-dismiss="offcanvas">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
       </header>
-      <hr />
-      <br />
+ 
       <section class="main" id="HOME">
         <img src="image/zaina.png" alt="me" />
         <div class="hello">
@@ -177,7 +162,7 @@
             <img src="image/c++.png" alt="C++" width="250px" calss="c++" />
           </div>
         </div>
-        <div>
+        <div class="three">
           <div id="git">
             <img src="image/git.png" alt="C++" width="250px" calss="c++" />
           </div>
@@ -205,7 +190,7 @@
     <!-- 
         COURSES SECTION
   -->
-    <section id="COURSES">
+    <!-- <section id="COURSES">
       <div id="course">
         <img src="image/courses.png" alt="logo" width="300px" />
       </div>
@@ -240,12 +225,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- 
           PROJECTES SECTION
          -->
 
-    <section id="PROJECTES">
+    <!-- <section id="PROJECTES">
       <div class="contener">
         <div class="images">
           <div class="item item1" width="100px" ;></div>
@@ -255,15 +240,14 @@
           <div class="item item5"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- 
         CONTACT SECTION
        -->
-    <footer id="CONTACT">
+    <!-- <footer id="CONTACT">
       <img src="image/contact_me-removebg-preview.png" alt="contact" />
       <h4>CONTACT ME</h4>
       <div class="contact">
-        <!-- <a href="https://wa.me/0771983544" target="_blank"> -->
           <a href="tel: +962 771 983 544" ><span class="icon flaticon-phone-call-1"> 
             </span><b> 
           <img src="image/phone.png" alt="phone-call"
@@ -278,7 +262,7 @@
           ><img src="image/linkedin.png" alt="linkedin"
         /></a>
       </div>
-    </footer>
+    </footer> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -287,3 +271,69 @@
     ></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+ <nav class="small navbar bg-body-tertiary fixed-top" >
+    <img src="image/logo.png" alt="Your Image" class="mr-2" style="width: 100px; ">
+    <div class="container-fluid">
+        <div class="d-flex justify-content-end">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+        >
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    zaina portfolio
+                </h5>
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#HOME">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ABOUT">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#EDUCATION">EDUCATION</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#SKILLS">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#COURSES">COURSES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#CONTACT">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav> -->
