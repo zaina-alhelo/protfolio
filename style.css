@@ -368,7 +368,114 @@ padding-left: 25px;
     overflow: hidden;
 }
 
-.course:hover {
+
+#CONTACT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    position: relative;
+    text-align: center;
+}
+
+#CONTACT h4 {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    animation: move 2s infinite;
+    margin-left: 150px;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-50%) translateY(0);
+    }
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+#CONTACT .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#CONTACT .contact img {
+    width: 50px;
+    transition: transform 0.5s;
+}
+#CONTACT  img {
+    margin-right: 42px;
+    width: 250px;
+}
+#CONTACT .contact a:hover img {
+    transform: scale(1.2);
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+}
+.item {
+    flex:1;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+    filter: blur(1px);
+    border-radius: 25px;
+ 
+}
+
+  
+.item1 {
+    background-image: url(image/facebook.png);
+
+}
+.item2 {
+    background-image: url(image/netflex.png);
+}
+.item3 {
+    background-image: url(image/youtube.png);
+}
+.item4 {
+    background-image: url(image/frontend.png);
+}
+.item5 {
+    background-image: url(image/linkedin\ dis.png);
+}
+
+  .contener {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+    
+  }
+  #PROJECTES {
+
+  margin: 100px 0;
+
+  }
+
+@media (min-width: 375px) {
+    body {
+        background-color: lavenderblush; 
+    }
+    #nav-bar {
+        display: none;
+    }
+    .course:hover {
     transform: scale(1.2);
 }
 
@@ -429,118 +536,17 @@ padding-left: 25px;
     width: 24em;
     border-radius: 0;
 }
-#CONTACT {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-    position: relative;
-    text-align: center;
-}
-
-#CONTACT h4 {
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2em;
-    animation: move 2s infinite;
-    margin-left: 150px;
-}
-
-@keyframes move {
-    0% {
-        transform: translateX(-50%) translateY(0);
-    }
-    50% {
-        transform: translateX(-50%) translateY(-10px);
-    }
-    100% {
-        transform: translateX(-50%) translateY(0);
-    }
-}
-
-#CONTACT .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
-
-#CONTACT .contact img {
-    width: 100px;
-    transition: transform 0.5s;
-}
-#CONTACT  img {
-    margin-right: 100px;
-}
-#CONTACT .contact a:hover img {
-    transform: scale(1.2);
-}
-
-
-.small {
-    position: fixed;
-}
-.images {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-
-}
-.item {
-    flex:1;
-    height: 70%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 0.8s ease;
-    filter: blur(1px);
-    border-radius: 25px;
- 
-}
 .item:hover {
     flex: 1.5;
     filter: blur(0px);
   }
-  
-.item1 {
-    background-image: url(image/facebook.png);
-}
-.item2 {
-    background-image: url(image/netflex.png);
-}
-.item3 {
-    background-image: url(image/youtube.png);
-}
-.item4 {
-    background-image: url(image/frontend.png);
-}
-.item5 {
-    background-image: url(image/linkedin\ dis.png);
-}
-
-  .container {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     
-    
+  #PROJECTE  {
+    display: none;
   }
-  #PROJECTES {
-
-  margin: 100px 0;
-
-  }
-
-@media (min-width: 375px) {
-    #nav-bar {
-        display: none;
-    }
 }
 
- @media only screen and (max-width: 800px) {
-    .navbar {
+ @media only screen and (max-width: 375px) {
+   #nav-bar {
         display: block;
     }
     body {
@@ -643,6 +649,7 @@ transform: scale(1);
         padding: 0;
         width: 100%;
         margin: 0;
+            padding-bottom: 4em;
 }
 #skills {
     /* flex-wrap: wrap; */
@@ -713,116 +720,119 @@ transform: scale(1);
     justify-content: center ;
     margin-right: 2rem;
 }
+#COURSES {
+        background-image: none;
+        background-color: lavenderblush; 
+        flex-direction: column;
+        padding: 0;
+         padding-bottom: 4em;
+        
+}
+#COURSES img {
+    padding: 0;
+ width: 200px;
 
+}
+#course {
+   width: 200px;
+}
+.course {
+font-size: 10px;
+padding:25px;
+ width: 30em;
+}
+.content{
+   font-size: 15px;
+}
+#COURSES .y {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#COURSES .test {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+#cour {
+    align-self: center;
+}
+.container  {
+    flex-direction: column;
+}
+  #PROJECTES {
+    margin: 0;
+    background-color: lavenderblush; 
+  }
+  
+  #PROJECTE {
+    margin: 0;
+    background-color: lavenderblush; 
+  }
+  
+  .images {
+       flex-direction: column;
+   gap: 20px;
+   align-items: center;
+
+    
+  }
+  .images img {
+     width: 200px;
+    
+  }
+  .item  {
+    height: 100vh;
+    filter: none;
+  }
+  .item1 ,
+  .item2 ,
+  .item3 ,
+  .item4 ,
+  .item5 {
+    background-image: none;
+background-color: lavenderblush; 
+
+  }
+ #PROJECTE .contener {
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+background-color: lavenderblush; 
+height: 100vh;
+ }
+  #PROJECTES .images {
+    display: none;
+  }
+  #CONTACT {
+    background-color: lavenderblush; 
+    height: 40vh;
+
+  }
+  #CONTACT  img {
+    margin:0;
+    width: 200px;
+}
+#CONTACT h4  {
+    font-size: 1em;
+        margin-left: 63px;
 
 }
 
+#CONTACT .contact img {
+    width: 50px;
+}
+#CONTACT .contact a:hover img {
+    transform: scale(1);
+}
+#CONTACT .contact {
+    margin-top: 10px;
+}
+ }
 
-    /* nav {
-        width: 50px;
-    }
-    .big {
-        display: none;
-    }
-     #HOME {
-        display: flex;
-        background-image: none;
-        background-color: rgb(166, 238, 214);
-        font-size: 12px;
-        justify-content: center;
-        align-items: center;
-        
-    }
+    /* 
 
-    
-     .logo img{
-        display: flex;
-        padding-top: 10px;
-        width: 100px;
-        
-    }
-
-    
-   #ABOUT {
-        background-image: none;
-        background-color: rgb(166, 238, 214);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      
-    }
-    
-    #ABOUT img { 
-        width: 300px;
-        padding: 50px;
-        margin: 0; 
-    }
-
-    #ABOUT .cards {
-        
-        margin: 80px; 
-    }
-   #EDUCATION {
-        background-image: none;
-        background-color: rgb(166, 238, 214);
-        display: flex;
-        flex-direction: column;
-        width: 100vh ;
-       
-     
-    }
-    .boxes {
-        flex-direction: column;
-        margin-top: 0;
-        align-items: center;
-        justify-content: center;
-        margin-right: 100px;
-      
-    }
-  
-    .card {
-
-        width:35em;
-        padding: 50px;
-
-        font-size: 10px;
-        height: 15vh;
-     
-        
-    }
-    #b {
-        font-size:15px;
-        padding-bottom: 20px;  
-    }
-    #SKILLS {
-        background-image: none;
-        background-color: rgb(166, 238, 214);
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        padding: 0;
-        width: 100vh ;
-    }
-    #skills {
-        margin-right: 150px;
-        margin-bottom: 0;
-    }
-    #git   {
-        margin-left: 30px;
-    }
-    #python   {
-        margin-left: 100px;
-    }
-    #figma {
-        margin-left: 100px;
-    }
-    .photo {
-        padding: 0;
-        margin-left: 50px;
-        margin-top: 0;
-        flex-direction: column;
-    }
     #COURSES {
         width: 100vh ;
         background-image: none;
